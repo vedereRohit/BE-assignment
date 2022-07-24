@@ -17,7 +17,18 @@
 Enjoy the app!:)........HOPE I GET SELECTED FOR THE ROLE
 
 
+TECHNOLGIES USED :
+
 HTML CSS and Bootstrap - Front End 
 
 Java core - Back End 
+
+MySQL - DataBAse
+
+
+
+Screenshots
+![Screenshot (27)](https://user-images.githubusercontent.com/74318245/180639451-d6caffa0-502f-4ced-9550-831c1f16e203.png)
+![Screenshot (28)](https://user-images.githubusercontent.com/74318245/180639454-8d6a3c50-edab-49d5-b383-d5bc1799b656.png)
+![Screenshot (25)](https://user-images.githubusercontent.com/74318245/180639455-9944cbc3-8d6c-4ec0-aabb-bd7147712cf6.png)
 
