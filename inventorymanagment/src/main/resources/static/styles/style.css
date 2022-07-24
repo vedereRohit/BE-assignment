@@ -1,0 +1,135 @@
+
+body {
+    background-color: lightgray;
+    /* font-family: 'Poppins', sans-serif;
+    align-items: center;
+    justify-content: center; */
+
+
+}
+
+.box {
+    margin-top: 3rem;
+    width: 420px;
+    height: 530px;
+    box-shadow: -1px 0 10px #000000;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-left: 29rem;
+    background-color: rgba(249, 245, 244, 0.75)
+}
+
+.box h2 {
+    padding-top: 3rem;
+}
+
+img {
+    width: 350px;
+    height: 250px;
+    display: flex;
+    margin-bottom: 10px;
+}
+
+/* Serach icon */
+
+* {
+    box-sizing: border-box;
+}
+
+/* Style the search field */
+
+form.example input[type=text] {
+    padding: 10px;
+    font-size: 17px;
+    border: 1px solid grey;
+    float: left;
+    width: 60%;
+    background: #f1f1f1;
+    margin-top: 3rem;
+    margin-left: 2rem;
+    border-radius: 2rem;
+
+}
+
+/* Style the submit button */
+form.example button {
+    float: left;
+    width: 20%;
+    padding: 10px;
+    background: #2196F3;
+    color: white;
+    font-size: 17px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    margin-top: 3rem;
+    margin-left: 10px;
+    border-radius: 2rem;
+}
+
+form.example button:hover {
+    background: #0b7dda;
+}
+
+/* Clear floats */
+form.example::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.upload {
+    text-align: center;
+
+}
+
+#myFile {
+    margin-top: 5rem;
+    margin-left: 4rem;
+    padding: 11%;
+
+
+}
+
+.btn {
+
+    margin-top: -50px;
+}
+
+.bottom {
+    margin-top: 100px;
+    margin-left: 4rem;
+}
+
+.bottom img {
+    height: 30px;
+    width: 60px;
+}
+
+.text {
+    margin-top: -38px;
+}
+
+.btn2 {
+    background-color: DodgerBlue;
+    border: none;
+    color: white;
+    padding: 9px 30px;
+    cursor: pointer;
+    font-size: 20px;
+    margin-top: 10px;
+    margin-left: 20px;
+    border-radius: 1rem;
+}
+
+/* Darker background on mouse-over */
+btn2:hover {
+    background-color: RoyalBlue;
+}
+
+#fname {
+    border: none;
+    background: none;
+    border-bottom: 2px solid silver;
+}

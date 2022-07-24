@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>webApp</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <style>
+        .back {
+            height: 50px;
+            margin-left: 1rem;
+            margin-top: 3rem;
+            text-decoration: none;
+            color: black;
+        }
+
+        .back:hover {
+            color: white;
+        }
+
+        .table {
+            width: 70rem;
+        }
+
+        table tr {
+            background-color: white;
+            padding: 100px;
+        }
+
+        th {
+            text-align: center;
+            height: 40px;
+            width: 350px;
+            color: white;
+        }
+    </style>
+</head>
+<body style="background-image: radial-gradient(circle, lightgreen, green); max-height: 5000px">
+
+<marquee style="background-color: rgba(231,234,231,0.51)" behavior="alternate"
+         direction="right">Welcome to Dawat-e-Islami Nikkah Registration App
+</marquee>
+<div class="mt-2">
+    <a class="back" href="#" th:href="@{/}"><i class="bi bi-arrow-down-left-square"></i></a>
+</div>
+<div class="d-flex justify-content-center align-items-center mt-4">
+
+    <form action="" th:object="${marriage}">
+        <table class="table table-sm table-bordered justify-content-center">
+            <thead class="thead-dark">
+            <tr>
+                <th>Sr. No</th>
+                <th>Reg. No</th>
+                <th>Mr. Name</th>
+                <th>Mrs. Name</th>
+                <th>Action</th>
+            </tr>
+            </thead>
+            <tbody th:with="i=0">
+            <tr th:each="res:${marriage}">
+                <div th:with="i=${i+1}">
+                    <td th:text="${i}">...</td>
+                </div>
+                <td>
+                    <a th:href="@{/marriage_form/record/{registrationNumber}(registrationNumber=${res.referenceNumber})}"
+                       th:text="${res.referenceNumber}"></a></td>
+                <td th:text="${res.mrName}">...</td>
+                <td th:text="${res.mrsName}">...</td>
+                <td class="d-flex justify-content-center">
+                    <a style="color: white; margin-right: 1rem;" class="btn btn-primary"
+                       th:href="@{/marriage_form/update/{registrationNumber}(registrationNumber=${res.referenceNumber})}">Update</a>
+                    <div style="outline: 1px solid gray; height: 2rem; margin-right: 1rem; margin-top: 3px"></div>
+                    <a style="width: 5rem; color: white" class="btn btn-danger"
+                       th:href="@{/marriage_form/delete/{registrationNumber}(registrationNumber=${res.referenceNumber})}">Delete</a>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </form>
+</div>
+<script type="text/javascript" th:inline="javascript" th:src="@{/styles/logic.js}"></script>
+</body>
+</html>
