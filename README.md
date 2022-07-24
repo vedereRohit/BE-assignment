@@ -1,6 +1,7 @@
 # BE
  This is regarding the Ennea Solutions Private Limited - Software Developer role that I had applied to.
 
+FOR SOURCE CODE : BE-Project/inventorymanagment/src/main/java/com/example/inventorymanagment/
 
 . First you need to have a local database server that we are providing you through any desk.
 
