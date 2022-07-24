@@ -11,3 +11,9 @@
 4- java -jar filr name
 
 Enjoy the app!:)........HOPE I GET SELECTED FOR THE ROLE
+
+
+HTML CSS and Bootstrap - Front End 
+
+Java core - Back End 
+
